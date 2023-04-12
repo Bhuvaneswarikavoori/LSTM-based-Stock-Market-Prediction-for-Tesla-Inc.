@@ -28,14 +28,23 @@ The model is built using the TensorFlow library and consists of the following la
 
 The model is compiled with the Adam optimizer and Mean Squared Error (MSE) loss function.
 
+## Model Architecture
+
+The model is built using the TensorFlow library and consists of the following layers:
+
+1. LSTM layer with 50 units and `relu` activation function
+2. Dropout layer with a dropout rate of 0.2
+3. Dense layer with a single output neuron
+
+The model is compiled with the Adam optimizer and Mean Squared Error (MSE) loss function.
+
 ## Model Performance
 
 The performance of the model is evaluated using the Root Mean Squared Error (RMSE) metric on both the training and test sets. In this example, the model achieved an RMSE of approximately 1.49 on the training set and 14.59 on the test set. The model's performance may vary depending on the selected features, window size, and other hyperparameters.
 
 ## Visualization of Predictions
 
-The graph below shows the actual Tesla stock prices (in blue) along with the predicted prices from the LSTM model for both the training (in green) and test (in red) sets. Although the model's predictions do not perfectly align with the actual price curve, they generally follow the same overall trend. For instance, when the stock price is decreasing, the model's predictions also tend to decrease, though not to the same extent as the actual price. This level of performance may be suitable for long-term investment strategies, where the focus is on capturing the general market trend rather than precise price movements. However, for short-term trading strategies such as intraday trading, the model's current performance may not be adequate, as it does not accurately predict the exact fluctuations in stock prices.
-
+The graph below shows the actual Tesla stock prices (in blue) along with the predicted prices from the LSTM model for both the training (in green) and test (in red) sets. This visualization helps to demonstrate how well the model has captured the overall trends in the stock prices.
 
 ![Tesla Stock Price Predictions](Tesla%20Stock%20Price%20Predictions.png)
 
