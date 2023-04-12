@@ -28,7 +28,15 @@ The model is built using the TensorFlow library and consists of the following la
 
 The model is compiled with the Adam optimizer and Mean Squared Error (MSE) loss function.
 
-![Tesla Stock Price Predictions](Tesla Stock Price Predictions.png)
+## Model Performance
+
+The performance of the model is evaluated using the Root Mean Squared Error (RMSE) metric on both the training and test sets. In this example, the model achieved an RMSE of approximately 1.49 on the training set and 14.59 on the test set. The model's performance may vary depending on the selected features, window size, and other hyperparameters.
+
+## Visualization of Predictions
+
+The graph below shows the actual Tesla stock prices (in blue) along with the predicted prices from the LSTM model for both the training (in green) and test (in red) sets. This visualization helps to demonstrate how well the model has captured the overall trends in the stock prices.
+
+![Tesla Stock Price Predictions](Tesla%20Stock%20Price%20Predictions.png)
 
 
 ## Model Performance
